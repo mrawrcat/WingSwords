@@ -1,0 +1,883 @@
+fileFormatVersion: 2
+guid: 22dbdaafea526084ab85d792f5aec4aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6570692834019277054
+    second: red char walk_0
+  - first:
+      213: 513991225881958233
+    second: red char walk_1
+  - first:
+      213: -1020257084588680235
+    second: red char walk_2
+  - first:
+      213: 7123814981990274296
+    second: red char walk_3
+  - first:
+      213: -2496777816032636726
+    second: red char walk_4
+  - first:
+      213: 945163478727107122
+    second: red char walk_5
+  - first:
+      213: 527317413086052653
+    second: red char walk_6
+  - first:
+      213: -3974429220337617442
+    second: red char walk_7
+  - first:
+      213: -3082192891329688054
+    second: red char walk_8
+  - first:
+      213: -5247013678162093627
+    second: red char walk_9
+  - first:
+      213: 3533611212633899126
+    second: red char walk_10
+  - first:
+      213: -7104324076582779677
+    second: red char walk_11
+  - first:
+      213: -9214968776843014890
+    second: red char walk_12
+  - first:
+      213: -207376520995342654
+    second: red char walk_13
+  - first:
+      213: -8633209334768265585
+    second: red char walk_14
+  - first:
+      213: -4209273146231449561
+    second: red char walk_15
+  - first:
+      213: 6438825385601497847
+    second: red char walk_16
+  - first:
+      213: -1875197248964380381
+    second: red char walk_17
+  - first:
+      213: -6604169787690753756
+    second: red char walk_18
+  - first:
+      213: -4336094918676240396
+    second: red char walk_19
+  - first:
+      213: -2063839451078545262
+    second: red char walk_20
+  - first:
+      213: 5178264802261609431
+    second: red char walk_21
+  - first:
+      213: 933776463070586248
+    second: red char walk_22
+  - first:
+      213: -4953474109677260031
+    second: red char walk_23
+  - first:
+      213: -2753756464993879124
+    second: red char walk_24
+  - first:
+      213: 4683382555888152163
+    second: red char walk_25
+  - first:
+      213: -3620774893222472548
+    second: red char walk_26
+  - first:
+      213: -6010133658666575964
+    second: red char walk_27
+  - first:
+      213: -3501495088520814567
+    second: red char walk_28
+  - first:
+      213: 4275594685500693050
+    second: red char walk_29
+  - first:
+      213: -2733176294556201060
+    second: red char walk_30
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: red char walk_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 149
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a82925a421b77f468147398ab485f48
+      internalID: 6570692834019277054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 146
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce8e57f31fcc544eada4b3a7a12e64a
+      internalID: 513991225881958233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 144
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae15d5d420c4a74ba5154e8dbd862f6
+      internalID: -1020257084588680235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72c5f68c013db348814cf4ed5fcd200
+      internalID: 7123814981990274296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 148
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1501dad692b2d04cbfc270d8bca9d5f
+      internalID: -2496777816032636726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 145
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a115fd991a838149969cf96008af4e1
+      internalID: 945163478727107122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 144
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d551a6f8b8fcd47ab3c901d4f1607c
+      internalID: 527317413086052653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 101
+        width: 30
+        height: 39
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da38005ccbec7ed4ba1fb7a028425a28
+      internalID: -3974429220337617442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 98
+        width: 33
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5757576, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d9235f968c13f40bc615c88ddb7b62
+      internalID: -3082192891329688054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_9
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 96
+        width: 31
+        height: 41
+      alignment: 9
+      pivot: {x: 0.54838705, y: 0.5121951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef83432aa0ef554f9cd3bc55ba7b7c2
+      internalID: -5247013678162093627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 96
+        width: 25
+        height: 39
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e88cb0da637f104aa6f5ad2413515e4
+      internalID: 3533611212633899126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 100
+        width: 29
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5862069, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f961a67a195db9d4f8b90d3be769a4c6
+      internalID: -7104324076582779677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_12
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 97
+        width: 29
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5862069, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8744c0934738346afecb5c1163294f
+      internalID: -9214968776843014890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 96
+        width: 28
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5121951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d89ef47b29ce094b833756aed59d8f2
+      internalID: -207376520995342654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 96
+        width: 25
+        height: 39
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e00d965317da194aa0172ade25cf89d
+      internalID: -8633209334768265585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 54
+        width: 28
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5357143, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0b6a5d88a8c02478aa029f43aa2520
+      internalID: -4209273146231449561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_16
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 51
+        width: 32
+        height: 36
+      alignment: 9
+      pivot: {x: 0.59375, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ae9a34555803e448f2462dc6655d18
+      internalID: 6438825385601497847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 49
+        width: 29
+        height: 38
+      alignment: 9
+      pivot: {x: 0.55172414, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f65c937e4619c4f95a76e3ab77e2df
+      internalID: -1875197248964380381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 49
+        width: 23
+        height: 36
+      alignment: 9
+      pivot: {x: 0.43478262, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79921145bcd332e40906e443eff96b8c
+      internalID: -6604169787690753756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_19
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 54
+        width: 27
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5925926, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81573d82614a7f240bb924959c8ad8c2
+      internalID: -4336094918676240396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_20
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 50
+        width: 29
+        height: 37
+      alignment: 9
+      pivot: {x: 0.62068963, y: 0.5405406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695bca8c0aaf5f24ba911d7b901a0e9e
+      internalID: -2063839451078545262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_21
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 49
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0.60714287, y: 0.55263156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83739693897c9d54caa096237e2ecccd
+      internalID: 5178264802261609431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 49
+        width: 23
+        height: 36
+      alignment: 9
+      pivot: {x: 0.43478262, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8188591b2a3ede468038937ec607015
+      internalID: 933776463070586248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 30
+        height: 39
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb1ff78a60d2194fae882e5694f605b
+      internalID: -4953474109677260031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2
+        width: 34
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b051f5273033a418c7675b9ca1bc41
+      internalID: -2753756464993879124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_25
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 31
+        height: 40
+      alignment: 9
+      pivot: {x: 0.54838705, y: 0.52500004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b6ef6983b7c3b469b89e9e5c793bdd
+      internalID: 4683382555888152163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_26
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 25
+        height: 38
+      alignment: 9
+      pivot: {x: 0.44, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc77c3202fa50fc4592f66d3b826ff05
+      internalID: -3620774893222472548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 5
+        width: 29
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5862069, y: 0.53846157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663ff2c00a2cab8469f1a7ecae76273a
+      internalID: -6010133658666575964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_28
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1
+        width: 31
+        height: 39
+      alignment: 9
+      pivot: {x: 0.6451613, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9b1459d0503fb46b948fdde3cdca56
+      internalID: -3501495088520814567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_29
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 30
+        height: 40
+      alignment: 9
+      pivot: {x: 0.6, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bddbf70c7612454d822f15137ea8442
+      internalID: 4275594685500693050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red char walk_30
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 25
+        height: 38
+      alignment: 9
+      pivot: {x: 0.44, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78146dc868ef30e4e9889c2f032e235a
+      internalID: -2733176294556201060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
