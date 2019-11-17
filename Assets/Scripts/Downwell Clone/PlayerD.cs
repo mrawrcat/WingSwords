@@ -86,11 +86,12 @@ public class PlayerD : MonoBehaviour
                 anim.SetBool("isRunning", true);
 
             }
-            else if (moveInputX == 0 && isGrounded)
+            if (moveInputX == 0 && isGrounded)
             {
                 anim.SetBool("isRunning", false);
             }
 
+            
         }
         else
         {
@@ -258,13 +259,33 @@ public class PlayerD : MonoBehaviour
         }
         if(collision.collider.tag == "Bee")
         {
-            camshake.shakeDuration = 0.3f;
-            rb2d.velocity = Vector2.zero;
-            rb2d.AddForce(transform.up * 100f);
-            collision.collider.GetComponent<BreakableD>().TakeDmg(dmg);
-            Debug.Log("stomped enemy bee");
-
+            if(anim.GetFloat("Vertical") < 0)
+            {
+                //camshake.shakeDuration = 0.5f;
+                rb2d.velocity = Vector2.zero;
+                rb2d.AddForce(transform.up * 100f);
+                collision.collider.GetComponent<BreakableD>().TakeDmg(dmg);
+                Debug.Log("stomped enemy bee");
+            }
+            else if(anim.GetFloat("Vertical") >= 0 && dmgable)
+            {
+                //camshake.shakeDuration = 0.9f;
+                //rb2d.velocity = Vector2.zero;
+                rb2d.AddForce(transform.up * 100f);
+                StartCoroutine(gotHit());
+                Debug.Log("bee hit player");
+                StartCoroutine(collisionTrigger());
+                countToDmgable = .8f;
+            }
             
+        }
+
+        IEnumerator collisionTrigger()
+        {
+            collision.collider.GetComponent<BoxCollider2D>().isTrigger = true;
+            yield return new WaitForSeconds(.3f);
+            collision.collider.GetComponent<BoxCollider2D>().isTrigger = false;
+            yield return null;
         }
         
     }
@@ -326,12 +347,20 @@ public class PlayerD : MonoBehaviour
     IEnumerator swingSword()
     {
         anim.SetBool("isSlashing", true);
-        yield return new WaitForSeconds(.13f);
+        yield return new WaitForSeconds(.2f);
         anim.SetBool("isSlashing", false);
         yield return null;
 
     }
+    IEnumerator gotHit()
+    {
+        anim.SetBool("isHit", true);
+        yield return new WaitForSeconds(.7f);
+        anim.SetBool("isHit", false);
+        yield return null;
 
+    }
+    
     public void TakeDmg(float dmg)
     {
         Debug.Log(dmg + " dmg taken");
