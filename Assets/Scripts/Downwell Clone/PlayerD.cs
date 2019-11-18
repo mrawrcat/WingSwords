@@ -138,7 +138,7 @@ public class PlayerD : MonoBehaviour
         {
             groundedcounter = groundtime;
             isjump = false;
-            rb2d.gravityScale = 1;
+            //rb2d.gravityScale = 1;
         }
         if (!isGrounded)
         {
@@ -197,7 +197,7 @@ public class PlayerD : MonoBehaviour
             if (Input.GetKey(KeyCode.F))
             {
                 timeBtwnAtk = startTimeBtwnAtk;
-                rb2d.gravityScale = 0;
+                
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(Vector2.down * 20, ForceMode2D.Impulse);
                 Collider2D[] enemiesToDmg = Physics2D.OverlapCircleAll(atkpos.position, atkRange, whatIsEnemies);
@@ -226,7 +226,7 @@ public class PlayerD : MonoBehaviour
             if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.RightArrow))
             {
                 timeBtwnAtk = startTimeBtwnAtk;
-                rb2d.gravityScale = 0;
+                
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(20, -20), ForceMode2D.Impulse);
                 //rb2d.AddForce(Vector2.right * 10, ForceMode2D.Impulse);
@@ -256,7 +256,7 @@ public class PlayerD : MonoBehaviour
             if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.LeftArrow))
             {
                 timeBtwnAtk = startTimeBtwnAtk;
-                rb2d.gravityScale = 0;
+                
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(-20,-20), ForceMode2D.Impulse);
                 
