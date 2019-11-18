@@ -7,6 +7,7 @@ public class GameManagerD : MonoBehaviour
     public static GameManagerD managerD;
 
     public float health, speed, jumpforce;
+    public bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,9 @@ public class GameManagerD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(health <= 0)
+        {
+            gameOver = true;
+        }
     }
 }

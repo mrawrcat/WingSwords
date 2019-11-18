@@ -574,9 +574,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71149da64e885bb47a6dee5eec691052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 3
   speed: 5
   jumpforce: 5
+  gameOver: 0
 --- !u!1 &425957762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,8 +2472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 61400518}
-  OffsetX: 0
-  OffsetY: 0
+  OffsetX: 1
+  OffsetY: 3
 --- !u!212 &2063617011
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2606,12 +2607,17 @@ PrefabInstance:
     - target: {fileID: 5502482297597930266, guid: 8db4dc875c70a7b4c8c73fce528576de,
         type: 3}
       propertyPath: atkRange
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5502482297597930266, guid: 8db4dc875c70a7b4c8c73fce528576de,
         type: 3}
       propertyPath: startTimeBtwnAtk
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496610924611610132, guid: 8db4dc875c70a7b4c8c73fce528576de,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.445
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8db4dc875c70a7b4c8c73fce528576de, type: 3}
@@ -2744,6 +2750,16 @@ PrefabInstance:
     - target: {fileID: 1657744762, guid: a6be8dab8e382044fbbb85acfc37caf4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691973290964385221, guid: a6be8dab8e382044fbbb85acfc37caf4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265117832332876582, guid: a6be8dab8e382044fbbb85acfc37caf4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6be8dab8e382044fbbb85acfc37caf4, type: 3}

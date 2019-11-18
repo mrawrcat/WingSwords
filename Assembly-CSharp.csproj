@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Downwell Clone\Enemy.cs" />
     <Compile Include="Assets\Scripts\Downwell Clone\EnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\Downwell Clone\EnemyPatrolNoTurn.cs" />
+    <Compile Include="Assets\Scripts\Downwell Clone\FadeUI.cs" />
     <Compile Include="Assets\Scripts\Downwell Clone\FallingSpike.cs" />
     <Compile Include="Assets\Scripts\Downwell Clone\GameManagerD.cs" />
     <Compile Include="Assets\Scripts\Downwell Clone\HelperD.cs" />

@@ -11,6 +11,6 @@ public class CameraScript : MonoBehaviour {
     void Update()
     {
         //follow the target
-        transform.position = new Vector3(transform.position.x + OffsetX, target.position.y + OffsetY, transform.position.z);
+        transform.position = new Vector3(target.position.x + OffsetX, target.position.y + OffsetY, transform.position.z);
     }
 }

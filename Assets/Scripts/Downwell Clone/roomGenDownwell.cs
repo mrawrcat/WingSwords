@@ -19,9 +19,12 @@ public class roomGenDownwell : MonoBehaviour
     private int downCounter;
     private float timeBtwnRoom;
     private HelperD helper;
+    private FadeUI fade;
+    
     void Start()
     {
         helper = FindObjectOfType<HelperD>();
+        fade = FindObjectOfType<FadeUI>();
         int randStartingPos = Random.Range(0, startingPositions.Length);
         transform.position = startingPositions[randStartingPos].position;
         GameObject room = Instantiate(startRooms[0], transform.position, Quaternion.identity);
@@ -66,8 +69,11 @@ public class roomGenDownwell : MonoBehaviour
                 GameObject instance = Instantiate(endRooms[0], transform.position, Quaternion.identity);
                 instance.transform.parent = Grid.transform;
                 stopGen = true;
-                helper.speedRunning = true;
+                //helper.speedRunning = true;
                 //player.SetActive(true);
+                fade.m_Fading = false;
+                
+                
             }
         
         

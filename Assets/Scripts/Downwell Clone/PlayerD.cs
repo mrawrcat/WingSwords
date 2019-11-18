@@ -68,12 +68,10 @@ public class PlayerD : MonoBehaviour
     {
         if (bodyControl)
         {
-            if (!onSurface)
-            {
-                //LR movement
-                moveInputX = Input.GetAxis("Horizontal");
-                rb2d.velocity = new Vector2(moveInputX * GameManagerD.managerD.speed, rb2d.velocity.y);
-            }
+            
+            //LR movement
+            moveInputX = Input.GetAxis("Horizontal");
+            rb2d.velocity = new Vector2(moveInputX * GameManagerD.managerD.speed, rb2d.velocity.y);
             //moveInputY = Input.GetAxis("Vertical");
             //rb2d.velocity = new Vector2(moveInputX, rb2d.velocity.y);
             isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkradius, whatIsGround);
@@ -97,7 +95,7 @@ public class PlayerD : MonoBehaviour
         {
 
             //rb2d.velocity = Vector2.ClampMagnitude(rb2d.velocity.magnitude, maxVelocity);
-            rb2d.velocity = new Vector2(0, rb2d.velocity.y);
+            //rb2d.velocity = new Vector2(0, rb2d.velocity.y);
         }
 
     }
@@ -140,6 +138,7 @@ public class PlayerD : MonoBehaviour
         {
             groundedcounter = groundtime;
             isjump = false;
+            rb2d.gravityScale = 1;
         }
         if (!isGrounded)
         {
@@ -198,7 +197,69 @@ public class PlayerD : MonoBehaviour
             if (Input.GetKey(KeyCode.F))
             {
                 timeBtwnAtk = startTimeBtwnAtk;
-                rb2d.AddForce(Vector2.down * 100);
+                rb2d.gravityScale = 0;
+                rb2d.velocity = Vector2.zero;
+                rb2d.AddForce(Vector2.down * 20, ForceMode2D.Impulse);
+                Collider2D[] enemiesToDmg = Physics2D.OverlapCircleAll(atkpos.position, atkRange, whatIsEnemies);
+                StartCoroutine(swingSword());
+                for (int i = 0; i < enemiesToDmg.Length; i++)
+                {
+                    rb2d.velocity = Vector2.zero;
+                    Vector2 difference = transform.position - enemiesToDmg[i].transform.position;
+                    Vector2 differenceNorm = difference.normalized * 10f;
+                    rb2d.AddForce(differenceNorm, ForceMode2D.Impulse);
+                    if (enemiesToDmg[i].GetComponent<Breakable>())
+                    {
+                        Debug.Log("slashed rock");
+                        enemiesToDmg[i].GetComponent<Breakable>().TakeDmg(dmg);
+                    }
+                    if (enemiesToDmg[i].GetComponent<BreakableD>())
+                    {
+                        Debug.Log("slashed bee");
+                        enemiesToDmg[i].GetComponent<BreakableD>().TakeDmg(dmg);
+                    }
+                    //enemiesToDmg[i].GetComponent<BossHealth>().TakeDmg(dmg);
+                    Debug.Log("hit enemy");
+                }
+            }
+
+            if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.RightArrow))
+            {
+                timeBtwnAtk = startTimeBtwnAtk;
+                rb2d.gravityScale = 0;
+                rb2d.velocity = Vector2.zero;
+                rb2d.AddForce(new Vector2(20, -20), ForceMode2D.Impulse);
+                //rb2d.AddForce(Vector2.right * 10, ForceMode2D.Impulse);
+                Collider2D[] enemiesToDmg = Physics2D.OverlapCircleAll(atkpos.position, atkRange, whatIsEnemies);
+                StartCoroutine(swingSword());
+                for (int i = 0; i < enemiesToDmg.Length; i++)
+                {
+                    rb2d.velocity = Vector2.zero;
+                    Vector2 difference = transform.position - enemiesToDmg[i].transform.position;
+                    Vector2 differenceNorm = difference.normalized * 10f;
+                    rb2d.AddForce(differenceNorm, ForceMode2D.Impulse);
+                    if (enemiesToDmg[i].GetComponent<Breakable>())
+                    {
+                        Debug.Log("slashed rock");
+                        enemiesToDmg[i].GetComponent<Breakable>().TakeDmg(dmg);
+                    }
+                    if (enemiesToDmg[i].GetComponent<BreakableD>())
+                    {
+                        Debug.Log("slashed bee");
+                        enemiesToDmg[i].GetComponent<BreakableD>().TakeDmg(dmg);
+                    }
+                    //enemiesToDmg[i].GetComponent<BossHealth>().TakeDmg(dmg);
+                    Debug.Log("hit enemy");
+                }
+            }
+
+            if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.LeftArrow))
+            {
+                timeBtwnAtk = startTimeBtwnAtk;
+                rb2d.gravityScale = 0;
+                rb2d.velocity = Vector2.zero;
+                rb2d.AddForce(new Vector2(-20,-20), ForceMode2D.Impulse);
+                
                 Collider2D[] enemiesToDmg = Physics2D.OverlapCircleAll(atkpos.position, atkRange, whatIsEnemies);
                 StartCoroutine(swingSword());
                 for (int i = 0; i < enemiesToDmg.Length; i++)
@@ -254,8 +315,8 @@ public class PlayerD : MonoBehaviour
         if (collision.collider.tag == "Spike")
         {
             Debug.Log("stepped on spike");
-            rb2d.AddForce(transform.up * 900f);
-            rb2d.AddForce(transform.right * -4000f);
+            //rb2d.AddForce(transform.up * 900f);
+            //rb2d.AddForce(transform.right * -4000f);
         }
         if(collision.collider.tag == "Bee")
         {
@@ -263,7 +324,7 @@ public class PlayerD : MonoBehaviour
             {
                 //camshake.shakeDuration = 0.5f;
                 rb2d.velocity = Vector2.zero;
-                rb2d.AddForce(transform.up * 100f);
+                rb2d.AddForce(transform.up * 5f, ForceMode2D.Impulse);
                 collision.collider.GetComponent<BreakableD>().TakeDmg(dmg);
                 Debug.Log("stomped enemy bee");
             }
@@ -276,6 +337,11 @@ public class PlayerD : MonoBehaviour
                 Debug.Log("bee hit player");
                 StartCoroutine(collisionTrigger());
                 countToDmgable = .8f;
+                if(GameManagerD.managerD.health > 0)
+                {
+                    TakeDmg(1);
+                }
+                
             }
             
         }
@@ -364,7 +430,7 @@ public class PlayerD : MonoBehaviour
     public void TakeDmg(float dmg)
     {
         Debug.Log(dmg + " dmg taken");
-        GameManager.manager.health -= dmg;
+        GameManagerD.managerD.health -= dmg;
         //StartCoroutine(dmgAnim());
     }
 
