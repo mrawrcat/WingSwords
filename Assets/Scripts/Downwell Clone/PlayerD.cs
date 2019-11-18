@@ -25,6 +25,8 @@ public class PlayerD : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float dmg;
     public float maxVelocity = 10;
+    public float dropforce;
+    bool doGroundPound;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -50,6 +52,14 @@ public class PlayerD : MonoBehaviour
             JumpCheck();
             GroundedDetectAnim();
             Slash();
+
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                if (!isGrounded)
+                {
+                    doGroundPound = true;
+                }
+            }
         }
 
 
@@ -89,7 +99,11 @@ public class PlayerD : MonoBehaviour
                 anim.SetBool("isRunning", false);
             }
 
-            
+            if (doGroundPound)
+            {
+                GroundPoundAtk();
+            }
+            doGroundPound = false;
         }
         else
         {
@@ -116,6 +130,20 @@ public class PlayerD : MonoBehaviour
         {
             Flip();
         }
+    }
+
+    private void GroundPoundAtk()
+    {
+        rb2d.velocity = Vector2.zero;
+        rb2d.angularVelocity = 0;
+        StartCoroutine(DropSmash());
+
+    }
+
+    private IEnumerator DropSmash()
+    {
+        yield return new WaitForSeconds(.5f);
+        rb2d.AddForce(Vector2.down * dropforce, ForceMode2D.Impulse);
     }
     void GroundedDetectAnim()
     {

@@ -2614,6 +2614,11 @@ PrefabInstance:
       propertyPath: startTimeBtwnAtk
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5502482297597930266, guid: 8db4dc875c70a7b4c8c73fce528576de,
+        type: 3}
+      propertyPath: dropforce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1496610924611610132, guid: 8db4dc875c70a7b4c8c73fce528576de,
         type: 3}
       propertyPath: m_LocalPosition.y
